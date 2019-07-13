@@ -1,0 +1,333 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    overflow: auto;
+    width: 50px;
+    height: 100%;
+    left: 20px;
+    border-right: 1px solid #F3F8FC;
+}
+
+.nav a{
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: slategray;
+    
+}
+
+.active{
+    color: #0084FF;
+    border-left: 2px solid #0084FF;
+}
+.nav a:hover{
+    color:#0084FF;
+    border-left: 2px solid #0084FF;
+}
+.search{
+    position: absolute;
+    left: 65px;
+}
+.search i{
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    color: slategray;
+}
+@media (max-width:1292px){
+    .search i{
+        top: 45px;
+    }
+}
+input{
+    width: 1225px;
+    padding-left: 45px; 
+    height: 50px;
+}
+
+}
+@media (max-width:1292px) {
+    input{
+        width: 1000px;
+        position: absolute;
+        top: -50px;
+    }
+}
+
+.form{
+    border: 2px solid #f1f1f1;
+    box-shadow: none;
+}
+input:focus{
+    outline: none;
+}
+#nike img{
+    height: 40px;
+    width:30px;
+    position: absolute;
+    border-radius: 50%;
+    top: 5px;
+    left: 1085px;
+    z-index: 1;   
+}
+@media (max-width:1292px) {
+    #nike img{
+        top:30px;
+    }
+    
+}
+#mine img{
+    height: 40px;
+    width: 35px;
+    position: absolute;
+    left: 1125px;
+    border-radius: 50%;
+    top: 5px;
+}
+@media (max-width:1292px) {
+    #mine img{
+        top: 30px;
+    }
+}
+#add img{
+    height:35px;
+    width: 30px;
+    position: absolute;
+    left: 1175px;
+    top: 5px;
+}
+@media (max-width:1292px) {
+    #add img{
+        top: 30px;
+    }
+}
+#set i{
+    position: absolute;
+    left:1250px;
+    
+}
+@media (max-width:1292px) {
+    #set i{
+        top: 40px;
+    }
+}
+.row h1{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+.row p{
+    position: absolute;
+    top: 100px;
+    left: 1015px;
+    border: 2px solid whitesmoke;
+    background: whitesmoke;
+    padding: 12px;
+}
+@media (max-width:1292px){
+    .row p{
+        font-size: 10px;
+        width: 100px;
+    }
+}
+.row .card:hover{
+    box-shadow: 2px 2px 2px 2px solid black;
+}
+#box1{
+    position: relative;
+    z-index: 1;
+    border: 2px solid #f1f1f1;
+    height: 220px;
+    width: 200px;
+    top: 200px;
+    left: 200px;
+}
+#box1:hover{
+    box-shadow: 5px 5px 20px 5px lightgrey;
+    cursor: pointer;
+}
+#box2{
+    position: relative;
+    z-index: 1;
+    border: 2px solid #f1f1f1;
+    height: 220px;
+    top: -20px;
+    width: 200px;
+    left: 450px;
+}
+#box2:hover{
+    box-shadow: 5px 5px 20px 5px lightgrey;
+    cursor: pointer;
+}
+#box2 i{
+    color: gray;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+#box2 h1{
+    margin-top: 50px;
+    margin-left: 60px;
+}
+#box2 p{
+    margin-left: 60px;
+}
+#box2 #up{
+    margin-top: -20px;
+    margin-left: 48px;
+    color: green;
+}
+#box2 .fa-caret-up{
+    color: green;
+}
+#box3{
+    position: absolute;
+    z-index: 1;
+    border: 2px solid #f1f1f1;
+    height: 220px;
+    width: 200px;
+    top: 200px;
+    left: 695px;
+}
+#box3:hover{
+    box-shadow: 5px 5px 20px 5px lightgrey;
+    cursor: pointer;
+}
+#box3 h1{
+    margin-top: 50px;
+    margin-left: 60px;
+}
+#box3 p{
+    margin-left: 70px;
+}
+#box3 #down{
+    margin-top: -15px;
+    margin-left: 65px;
+    color: red;
+}
+#box4{
+    position: absolute;
+    z-index: 1;
+    border: 2px solid #f1f1f1;
+    height: 220px;
+    width: 200px;
+    top: 200px;
+    left: 945px;
+}
+#box4:hover{
+    box-shadow: 5px 5px 20px 5px lightgrey;
+    cursor: pointer;
+}
+#box4 h1{
+    margin-top: 50px;
+    margin-left: 60px;
+}
+#box4 p{
+    margin-left: 45px;
+}
+#box4 #up{
+    margin-top: -15px;
+    margin-left: 65px;
+    color: green;
+}
+#box1 h1{
+    margin-left: 45px;
+    margin-top: 20px;
+}
+#box1 p{
+    margin-left: 45px;
+    font-size: 15px;
+}
+.part h5{
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.part h5 span{
+    color: #0084FF;
+    border-bottom: 3px solid #0084FF;
+}
+.part p{
+    margin-left: 1015px;
+    margin-top: -30px;
+}
+@media (max-width:1292px){
+    .part p{
+        font-size: 10px;
+        width: 110px;
+    }
+}
+#box5{
+    height: 380px;
+    width: 450px;
+    margin-top: 50px;
+    border: 2px solid #f1f1f1;
+    margin-left: 200px;
+}
+body {
+    background-color: #222;
+  }
+  svg{
+      margin-left: 100px;
+      margin-top: 50px;
+  }
+  .load {
+    fill: none;
+    stroke: red;
+    stroke-width: 5;
+    stroke-dasharray: 200 300;
+    transform: rotate(142deg);
+    transform-origin: 50px 50px;
+    animation: progress 5s linear reverse;
+  }
+  @keyframes progress {
+    from {
+      stroke-dasharray: 200 300;
+    }
+    to {
+      stroke-dasharray: 0 300;
+    }
+  }
+  .spesial {
+    stroke: red;
+    stroke-dasharray: 5 300;
+    transform: rotate(30deg);
+    animation: circpro 5s linear;
+  }
+  @keyframes circpro {
+    from {
+      transform: rotate(-220deg);
+    }
+    to {
+      transform: rotate(30deg);
+    }
+  }
+  #box5 h2{
+      margin-left: 160px;
+      margin-top: -80px;
+  }
+  #box5 p{
+      margin-left: 30px;
+      margin-top: 30px;
+  }
+  #box5 #likes{
+      margin-left: 100px;
+  }
+  #box6{
+    height: 380px;
+    width: 450px;
+    margin-top: -381px;
+    border: 2px solid #f1f1f1;
+    margin-left: 690px;
+  }
+  #box6 h5{
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  

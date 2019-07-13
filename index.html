@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/76e0803e0a.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+<body>
+          <div class="nav">
+        
+                <a class="no" href="#"><i class="fas fa-align-left"></i></a>
+                <a class="active" href="#"><i  class="fas fa-power-off"></i></a>
+                <a href="#"><i class="fas fa-comment"></i></a>
+                <a href="#"><i class="fas fa-file"></i></a>
+                <a href="#"><i class="fas fa-business-time"></i></a>
+                <a href="#"><i class="fab fa-windows"></i></a>
+                <a href="#"><i class="fas fa-camera-retro"></i></a>
+                <a href="#"><i class="fas fa-compass"></i></a>
+                <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+    </div>
+
+
+    <div class="search">           
+            <i class="fas fa-search" style="font-size: 14px;"></i>
+            <label class="control-label"></label>
+        <input type="text" class="form" placeholder="search Instagram">
+        <a id="nike" href="#"><img src="assets/images/nike.svg"></a>
+        <a id="mine" href="#"><img src="assets/images/rem.png"></a>
+        <a id="add" href="#"><img id="add" src="assets/images/add.svg"></a>
+        <a id="set" href="#"><i class="fas fa-cog"></i></a>
+    </div>
+    
+    <div class="row">
+        <h1>Analytics Overview</h1>
+        <p>Last 30 Days <i class="fas fa-angle-down"></i></p>
+    </div>
+   
+    <section>
+        <div id="box1">
+            <a id="user" href="#"><img src="assets/images/profile.svg" style="height:30px;width:30px;margin-left: 80px;margin-top:30px;"></a>
+            <h1>21.2K</h1>
+            <p>Total followers</p>
+        </div>
+        <div id="box2">
+            <a id="mess" href="#"><img src="assets/images/message.svg" style="height: 30px;width:30px;position: absolute;right:0px;top:-15px;"></a>
+            <i class="far fa-question-circle" style="cursor: pointer"></i>
+            <a id="click" href="#"><img src="assets/images/click.svg" style="height: 30px;width:30px;position:absolute;left:80px;top:40px;"></a>
+            <h1>1.6K</h1>
+            <p>Impressions</p>
+            <p id="up"><i class="fas fa-caret-up"></i>112.71%</p>
+        </div>
+        <div id="box3">
+            <a id="am" href="#"><img src="assets/images/dp.svg" style="height: 30px;width:30px;position:absolute;right:0;top:-15px;"></a>
+            <i class="far fa-question-circle" style="color: gray;margin-top:15px;margin-left:15px;cursor: pointer;"></i>
+            <a id="go" href="#"><img src="assets/images/gold.svg" style="height:30px;width:30px;position:absolute;left:80px;top:40px;"></a>
+            <h1>826</h1>
+            <p>Reach</p>
+            <p id="down"><i class="fas fa-caret-down">24.2%</i></p>
+        </div>
+        <div id="box4">
+                <i class="far fa-question-circle" style="color: gray;margin-top:15px;margin-left:15px;cursor: pointer;"></i>
+                <i class="fas fa-hand-paper" style="color: green;font-size:23px;position:absolute;left:85px;top:45px;"></i>
+                <h1>18.2%</h1>
+                <p>Engagement Rate</p>
+                <p id="up"><i class="fas fa-caret-up"></i>112.71%</p>
+        </div>
+    </section>
+    <section>
+        <div class="part">
+            <h5>Most  <span>Recent Media</span>&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-down" style="color: gray;"></i></h5>
+            <p>show <span>All Media</span>  <i class="fas fa-angle-down" style="color: gray;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-cloud-download-alt" style="background: whitesmoke;border-radius 50%;"></i></i></p>
+        </div>
+    </section>
+    <section>
+        <div id="box5">
+            <p>Get More Likes this Summer</p>
+            <svg viewBox="0 0 100 100" width="200px">
+                <circle class="load" cx="50" cy="50" r="45" />
+                <circle class="load spesial" cx="50" cy="50" r="45" />
+              </svg>
+              <img src="assets/images/heart.svg" style="height:50px;width:50px;margin-left:-130px;background:pink;padding:15px;border-radius:50%;">
+              <h2>29.2k</h2>
+              <p id="likes">You are at 77% of 36,000 likes</p>
+        </div>
+        <div id="box6">
+            <h5>Follower Growth</h5>
+            <img src="assets/images/boy.svg" style="width: 40px;height:40px;margin-left:350px;background:pink;border-radius:50%;margin-top:-50px;">
+            <canvas id="radar-chart" width="800" height="500"></canvas>
+
+
+            <script>
+            
+            
+            new Chart(document.getElementById("radar-chart"), {
+              type: 'radar',
+              data: {
+                labels: ["New-zealand", "India", "Australia", "England", "West-Indies"],
+                datasets: [
+                  {
+                    label: "2018",
+                    fill: true,
+                    backgroundColor: "rgba(179,181,198,0.2)",
+                    borderColor: "rgba(179,181,198,1)",
+                    pointBorderColor: "#fff",
+                    pointBackgroundColor: "rgba(179,181,198,1)",
+                    data: [8.77,55.61,21.69,6.62,6.82]
+                  }, {
+                    label: "2019",
+                    fill: true,
+                    backgroundColor: "rgba(255,99,132,0.2)",
+                    borderColor: "rgba(255,99,132,1)",
+                    pointBorderColor: "#fff",
+                    pointBackgroundColor: "rgba(255,99,132,1)",
+                    pointBorderColor: "#fff",
+                    data: [25.48,54.16,7.61,8.06,4.45]
+                  }
+                ]
+              },
+              options: {
+                title: {
+                  display: true,
+                  text: 'Distribution in % of world population'
+                }
+              }
+            });
+            
+            </script>        
+        </div>
+        </div>
+    </section>
+
+</body>
+</html>
